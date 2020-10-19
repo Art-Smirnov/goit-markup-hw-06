@@ -1,0 +1,338 @@
+/* колір основного текста #757575 */
+/* вторинний колір текста #212121 */
+/* білий колір #FFFFFF */
+/* акцент #2196F3 */
+/* колір контактів в підвалі rgba(255, 255, 255, 0.6) */
+/* головний колір фона #ffffff */
+/* вторинний колір фона #F5F4FA  */
+/* третій колір фона #2F303A */
+
+/* Site-hero */
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../pictures/bg-img/bg-Img.jpg);
+
+  background-color: var(--third-bg-color);
+  background-position: center;
+
+  max-width: 1600px;
+  height: 600px;
+  /* outline: 1px solid black; */
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Button */
+.button {
+  display: inline-flex;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+
+  border-color: transparent;
+  font-family: inherit;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+  cursor: pointer;
+}
+
+/* Преймущества  */
+
+.features {
+  padding-bottom: 0px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list .icon {
+  display: block;
+}
+
+.features-list .item {
+  width: calc((100% - 90px) / 4);
+}
+
+.features-list .thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  /* outline: 1px solid red; */
+}
+
+.features-container .list-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-container .text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Деятельность */
+
+.activity-list {
+  display: flex;
+  justify-content: space-between;
+}
+.activity-thumb {
+  position: relative;
+}
+
+.activity-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+
+  width: 370px;
+  height: 70px;
+}
+
+.activity-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+/* Персонал */
+
+.stuff {
+  background-color: var(--secondary-bg-color);
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team > .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+}
+
+.team .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team .text {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team .info {
+  padding-top: 30px;
+  padding-bottom: 16px;
+
+  background: var(--primary-white-color);
+}
+
+.networks {
+  display: flex;
+  justify-content: center;
+}
+
+.networks .link {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--icon-color);
+
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
+}
+
+.networks .icon {
+  fill: currentColor;
+}
+
+.networks .link:hover,
+.networks .link:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Клиенты */
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list .clients-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+
+  transition: border-color 250ms var(--timing-function);
+  /* outline: 1px solid tomato; */
+}
+
+.fix-size-company {
+  padding: 20px;
+}
+
+.fix-size-company-5 {
+  padding: 15px;
+}
+
+.clients-list .link {
+  color: currentColor;
+  transition: color 250ms var(--timing-function);
+}
+
+.clients-list .item {
+  width: calc((100% - 150px) / 6);
+}
+
+.clients-list .icon {
+  display: block;
+  fill: currentColor;
+}
+
+.clients-list .clients-box:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* Модельное окно */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms var(--timing-function);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: right;
+  padding: 8px;
+
+  background: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  min-width: 528px;
+  min-height: 581px;
+
+  transform: scale(1) translate(-50%, -50%);
+  transition: transform 250ms var(--timing-function);
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(0.9) translate(-50%, -50%);
+}
+.modal-btn {
+  /* display: inline-block; */
+  padding: 5px 9px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icon-close {
+  fill: currentColor;
+}
+.modal-btn:hover {
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  border-color: var(--primary-white-color);
+}

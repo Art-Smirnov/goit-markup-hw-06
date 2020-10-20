@@ -690,13 +690,61 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модельное окно -->
+
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn" data-modal-close>
+        <button class="close-modal-btn" data-modal-close>
           <svg class="icon-close" width="11" height="11">
             <use href="./pictures/icons/icomoon2/close.svg#icon-close"></use>
           </svg>
         </button>
+        <b class="modal-tittle">Оставьте свои данные, мы вам перезвоним</b>
+        <form class="modal-form">
+          <div class="form-field">
+            <label class="form-label" for="name">Имя</label>
+            <input class="form-input" type="text" name="name" id="name" />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="tel">Телефон</label>
+            <input class="form-input" type="tel" name="tel" id="tel" />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="mail">Почта</label>
+            <input class="form-input" type="email" name="mail" id="mail" />
+          </div>
+
+          <div class="form-field comment">
+            <label class="form-label" for="comment">Комментарий</label>
+            <textarea
+              class="form-input"
+              name="comment"
+              id="comment"
+              rows="5"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="policy">
+            <input type="checkbox" name="policy" />
+            <label class="policy-label" for="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a
+                target="_blank"
+                rel="noopener noreferer"
+                href="#"
+                class="policy-link"
+                >Условия договора</a
+              >
+            </label>
+          </div>
+
+          <div class="">
+            <button class="modal-btn" type="submit">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

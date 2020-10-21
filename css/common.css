@@ -19,6 +19,7 @@ html {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Утиліти */
+
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
@@ -102,10 +103,12 @@ textarea {
 
   /* background-color: green; */
 }
+
 .section.no-padding {
   padding-top: 0;
   padding-bottom: 0;
 }
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -116,6 +119,7 @@ textarea {
   line-height: 1.17;
   text-align: center;
 }
+
 /* Page header */
 
 .head-box {
@@ -132,6 +136,7 @@ textarea {
   font-size: 26px;
   line-height: 1.19;
 }
+
 .logo .accent {
   color: var(--title-text-color);
 
@@ -143,9 +148,11 @@ textarea {
 }
 
 /* Site nav */
+
 .site-nav {
   margin-left: 93px;
 }
+
 .nav-list {
   display: flex;
 }
@@ -303,10 +310,6 @@ textarea {
 
 /* Соцмережі */
 
-.networks-box {
-  margin-right: 93px;
-}
-
 .footer-title {
   display: inline-block;
   margin-bottom: 20px;
@@ -352,11 +355,16 @@ textarea {
 }
 
 /* Подписка */
+.subscribe-box {
+  margin-left: auto;
+}
+
 .subscribe {
-  display: block;
+  display: flex;
 }
 
 .footer-input {
+  display: block;
   width: 358px;
   padding: 15px 16px;
   border-radius: 4px;
@@ -366,4 +374,33 @@ textarea {
 
   font-size: 16px;
   line-height: 1.25;
+}
+
+.footer-input:focus {
+  outline-color: var(--accent-color);
+  background-color: var(--third-bg-color);
+  color: var(--primary-white-color);
+  border: 1px solid var(--accent-color);
+}
+
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.icon-send {
+  fill: currentColor;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  fill: currentColor;
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+  cursor: pointer;
+}
+
+.footer-btn > .btn-text {
+  margin-right: 10px;
 }

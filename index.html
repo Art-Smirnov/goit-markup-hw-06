@@ -700,36 +700,38 @@
             <use href="./pictures/icons/icomoon2/close.svg#icon-close"></use>
           </svg>
         </button>
+
         <b class="modal-tittle">Оставьте свои данные, мы вам перезвоним</b>
+
         <form class="modal-form">
-          <div class="form-field">
-            <label class="form-label" for="name">Имя</label>
-            <input class="form-input" type="text" name="name" id="name" />
-          </div>
+          <label class="form-field"
+            ><span class="form-label">Имя</span
+            ><input class="form-input" type="text" name="name" />
+          </label>
 
-          <div class="form-field">
-            <label class="form-label" for="tel">Телефон</label>
-            <input class="form-input" type="tel" name="tel" id="tel" />
-          </div>
+          <label class="form-field"
+            ><span class="form-label" for="tel">Телефон</span
+            ><input class="form-input" type="tel" name="tel" />
+          </label>
 
-          <div class="form-field">
-            <label class="form-label" for="mail">Почта</label>
-            <input class="form-input" type="email" name="mail" id="mail" />
-          </div>
+          <label class="form-field"
+            ><span class="form-label" for="mail">Почта</span
+            ><input class="form-input" type="email" name="mail" />
+          </label>
 
-          <div class="form-field comment">
-            <label class="form-label" for="comment">Комментарий</label>
+          <label class="form-field comment">
+            <span class="form-label">Комментарий</span>
             <textarea
               class="form-input"
               name="comment"
-              id="comment"
               rows="6"
               placeholder="Введите текст"
             ></textarea>
-          </div>
-          <div class="policy">
+          </label>
+
+          <label class="policy">
             <input type="checkbox" name="policy" />
-            <label class="policy-label" for="policy"
+            <span class="policy-label"
               >Соглашаюсь с рассылкой и принимаю
               <a
                 target="_blank"
@@ -737,13 +739,11 @@
                 href="#"
                 class="policy-link"
                 >Условия договора</a
-              >
-            </label>
-          </div>
+              ></span
+            >
+          </label>
 
-          <div class="">
-            <button class="modal-btn button" type="submit">Отправить</button>
-          </div>
+          <button class="modal-btn button" type="submit">Отправить</button>
         </form>
       </div>
     </div>

@@ -49,6 +49,36 @@ body {
   overflow: hidden;
 }
 
+.button {
+  display: inline-flex;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+
+  border-color: transparent;
+  font-family: inherit;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+  cursor: pointer;
+}
+
 img {
   display: block;
   max-width: 100%;
